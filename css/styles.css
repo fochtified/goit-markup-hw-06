@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5;
     color: #2e2f42;
     background-color: #ffffff;
@@ -31,9 +31,9 @@ address a {
 }
 
 .logo {
-    font-family: "Raleway";
-    font-size: 18px;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 1.17;
@@ -68,11 +68,7 @@ footer .logo:visited {
     color: #ffffff;
     font-weight: 500;
     letter-spacing: 0.04em;
-    border-radius: 4px;
-    width: 169px;
-    height: 56px;
     background-color: #4d5ae5;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 h1 {
