@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
-    color: #2e2f42;
+    color: #434455;
     background-color: #ffffff;
     letter-spacing: 0.02em;
 }
@@ -11,23 +11,37 @@ ul {
 }
 
 header a {
-    font-style: normal;
     text-decoration: none;
 }
 
-nav a,
-nav a:link,
-nav a:hover,
-nav a:focus,
-nav a:active,
-nav a:visited {
-    font-weight: 500;
-    color: inherit;
+.contact-bar {
+    font-style: normal;
 }
 
-address a {
-    color: #434455;
+.nav-bar-item,
+.nav-bar-item:link,
+.nav-bar-item:active,
+.nav-bar-item:visited {
+    font-weight: 500;
+    color: #2e2f42;
+}
+
+.nav-bar-item:hover,
+.nav-bar-item:focus {
+    color: #404bbf;
+}
+
+.contact-bar-item,
+.contact-bar-item:link,
+.contact-bar-item:active,
+.contact-bar-item:visited {
+    color: currentColor;
     font-weight: 400;
+}
+
+.contact-bar-item:hover,
+.contact-bar-item:focus {
+    color: #404bbf;
 }
 
 .logo {
@@ -45,19 +59,15 @@ address a {
 .logo:hover,
 .logo:focus,
 .logo:visited {
-    color: currentColor;
-}
-
-footer .logo:link,
-footer .logo:active,
-footer .logo:hover,
-footer .logo:focus,
-footer .logo:visited {
-    color: #f4f4fd;
-}
-
-.blue-highlight {
     color: #4d5ae5;
+}
+
+header .color-break {
+    color: #2e2f42;
+}
+
+footer .color-break {
+    color: #f4f4fd;
 }
 
 .order-service {
@@ -67,11 +77,18 @@ footer .logo:visited {
 .order-button {
     color: #ffffff;
     font-weight: 500;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4d5ae5;
 }
 
-h1 {
+.order-button:hover,
+.order-button:focus {
+    background-color: #404bbf;
+    cursor: pointer;
+}
+
+.order-slogan {
     color: #ffffff;
     font-weight: 700;
     font-size: 56px;
@@ -80,6 +97,7 @@ h1 {
 }
 
 h2 {
+    color: #2e2f42;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -92,6 +110,7 @@ h2 {
 }
 
 h3 {
+    color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -103,10 +122,6 @@ h3 {
 
 p {
     font-weight: 400;
-}
-
-section p {
-    color: #434455;
 }
 
 .our-team p {
