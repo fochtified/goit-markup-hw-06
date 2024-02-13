@@ -6,6 +6,14 @@ body {
     letter-spacing: 0.02em;
 }
 
+.our-team {
+    background-color: #f4f4fd;
+}
+
+.afterword {
+    background-color: #2e2f42;
+}
+
 ul {
     list-style-type: none;
 }
@@ -93,49 +101,48 @@ footer .color-break {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
     text-align: center;
 }
 
-h2 {
+.section-header {
     color: #2e2f42;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
 }
 
-.pros h2 {
+.pros .section-header {
     color: rgba(0, 0, 0, 0);
 }
 
-h3 {
+.subsection-header {
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
-.our-team h3 {
+.our-team .subsection-header {
     text-align: center;
 }
 
-p {
+.subsection-paragraph {
     font-weight: 400;
 }
 
-.our-team p {
+.our-team .subsection-paragraph {
     text-align: center;
 }
 
-footer p {
+.team-card {
+    background-color: #ffffff;
+}
+
+.afterword .subsection-paragraph {
     color: #f4f4fd;
-}
-
-.our-team {
-    background-color: #f4f4fd;
-}
-
-footer {
-    background-color: #2e2f42;
 }
