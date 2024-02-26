@@ -62,11 +62,6 @@ section {
     align-items: center;
 }
 
-.foot .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
 .top-menu {
     padding: 24px 0px;
     border-bottom: 1px solid #e7e9fc;
@@ -89,7 +84,6 @@ section {
 .contact-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0px;
 }
 
 .nav-list-item,
@@ -98,6 +92,7 @@ section {
 .nav-list-item:visited {
     font-weight: 500;
     color: #2e2f42;
+    padding: 24px 0px;
 }
 
 .nav-list-item:hover,
@@ -272,6 +267,11 @@ section {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
+}
+
+.foot {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .foot .subsection-paragraph {
