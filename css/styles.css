@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
@@ -6,49 +12,107 @@ body {
     letter-spacing: 0.02em;
 }
 
-.our-team {
+.our-team-general {
     background-color: #f4f4fd;
 }
 
-.afterword {
+.foot {
     background-color: #2e2f42;
 }
 
-ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
     list-style-type: none;
+}
+
+section {
+    padding: 120px 0px;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+header {
+    padding: 24px 0px;
 }
 
 header a {
     text-decoration: none;
 }
 
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
 .contact-bar {
     font-style: normal;
 }
 
-.nav-bar-item,
-.nav-bar-item:link,
-.nav-bar-item:active,
-.nav-bar-item:visited {
+.nav-list,
+.contact-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-list-item,
+.nav-list-item:link,
+.nav-list-item:active,
+.nav-list-item:visited {
     font-weight: 500;
     color: #2e2f42;
 }
 
-.nav-bar-item:hover,
-.nav-bar-item:focus {
+.nav-list-item:hover,
+.nav-list-item:focus {
     color: #404bbf;
 }
 
-.contact-bar-item,
-.contact-bar-item:link,
-.contact-bar-item:active,
-.contact-bar-item:visited {
+.contact-list-item,
+.contact-list-item:link,
+.contact-list-item:active,
+.contact-list-item:visited {
     color: currentColor;
     font-weight: 400;
 }
 
-.contact-bar-item:hover,
-.contact-bar-item:focus {
+.contact-list-item:hover,
+.contact-list-item:focus {
     color: #404bbf;
 }
 
@@ -70,8 +134,17 @@ header a {
     color: #4d5ae5;
 }
 
+header .logo {
+    margin-right: 76px;
+}
+
 header .color-break {
     color: #2e2f42;
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 footer .color-break {
@@ -80,6 +153,8 @@ footer .color-break {
 
 .order-service {
     background-color: #2e2f42;
+    text-align: center;
+    padding: 188px 0;
 }
 
 .order-button {
@@ -88,6 +163,13 @@ footer .color-break {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4d5ae5;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
 }
 
 .order-button:hover,
@@ -102,7 +184,8 @@ footer .color-break {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
+    margin: 0 auto 48px;
+    max-width: 496px;
 }
 
 .section-header {
@@ -113,10 +196,20 @@ footer .color-break {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
 }
 
-.pros .section-header {
-    color: rgba(0, 0, 0, 0);
+.pros-general .section-header {
+    display: none;
+}
+
+.pros-list {
+    display: flex;
+    gap: 24px;
+}
+
+.pros-list-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .subsection-header {
@@ -125,9 +218,10 @@ footer .color-break {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
-.our-team .subsection-header {
+.our-team-general .subsection-header {
     text-align: center;
 }
 
@@ -135,14 +229,42 @@ footer .color-break {
     font-weight: 400;
 }
 
-.our-team .subsection-paragraph {
+.our-team-general .subsection-paragraph {
     text-align: center;
+}
+
+.our-team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-card {
     background-color: #ffffff;
+    border: none;
+    border-radius: 0 0 4px 4px;
 }
 
-.afterword .subsection-paragraph {
+.card-tag {
+    padding: 32px 0px;
+}
+
+.our-portfolio-list {
+    display: flex;
+    row-gap: 48px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+
+.portfolio-card .card-tag {
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+}
+
+.foot .subsection-paragraph {
     color: #f4f4fd;
+    display: block;
+    flex-wrap: wrap;
+    width: 264px;
 }
