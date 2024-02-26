@@ -56,22 +56,23 @@ section {
     margin: 0 auto;
 }
 
-header .container {
+.top-menu .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-footer .container {
+.foot .container {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-header {
+.top-menu {
     padding: 24px 0px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
-header a {
+.top-menu a {
     text-decoration: none;
 }
 
@@ -88,6 +89,7 @@ header a {
 .contact-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0px;
 }
 
 .nav-list-item,
@@ -134,20 +136,20 @@ header a {
     color: #4d5ae5;
 }
 
-header .logo {
+.top-menu .logo {
     margin-right: 76px;
 }
 
-header .color-break {
+.top-menu .color-break {
     color: #2e2f42;
 }
 
-footer .logo {
+.foot .logo {
     display: inline-block;
     margin-bottom: 16px;
 }
 
-footer .color-break {
+.foot .color-break {
     color: #f4f4fd;
 }
 
@@ -163,6 +165,7 @@ footer .color-break {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4d5ae5;
+    cursor: pointer;
     display: block;
     min-width: 169px;
     height: 56px;
@@ -200,7 +203,16 @@ footer .color-break {
 }
 
 .pros-general .section-header {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .pros-list {
