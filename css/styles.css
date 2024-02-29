@@ -84,7 +84,7 @@ section {
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
-    align-items: start;
+    align-items: baseline;
 }
 
 .top-menu {
@@ -117,6 +117,7 @@ section {
     font-weight: 500;
     color: var(--n-blue);
     padding: 24px 0px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item:hover,
@@ -126,16 +127,18 @@ section {
 
 .state-change {
     position: relative;
+    color: var(--ocean);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .state-change:active::after {
     content: "";
     position: absolute;
-    top: 67px;
-    left: 0px;
+    left: 0;
+    bottom: -1px;
     border: none;
     border-radius: 2px;
-    min-width: 100%;
+    width: 100%;
     height: 4px;
     background-color: var(--ocean);
     z-index: 2;
@@ -147,6 +150,7 @@ section {
 .contact-list-item:visited {
     color: currentColor;
     font-weight: 400;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list-item:hover,
@@ -191,12 +195,14 @@ section {
 
 .order-service {
     background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
-        url(/images/hero-background.jpg);
+        url(../images/hero-background.jpg);
     background-repeat: no-repeat;
-    background-size: 1440px auto;
+    background-size: cover;
     background-position: center;
     text-align: center;
+    max-width: 1440px;
     padding: 188px 0;
+    margin: auto;
 }
 
 .order-button {
@@ -213,7 +219,7 @@ section {
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
-    transition: background-color 250ms ease-in-out;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover,
@@ -276,6 +282,7 @@ section {
     margin-bottom: 8px;
     height: 112px;
     max-width: 100%;
+    justify-content: center;
 }
 
 .subsection-header {
@@ -325,21 +332,24 @@ section {
     display: flex;
     gap: 24px;
     margin: 0 16px;
+    justify-content: center;
 }
 
 .icon-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     background-color: var(--iris);
     border: none;
     border-radius: 50%;
-    transition: background-color 250ms ease-in-out;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-link:hover,
-.icon-link:active {
+.team-social-item .icon-link:hover,
+.team-social-item .icon-link:focus,
+.team-social-item .icon-link:active {
     cursor: pointer;
     background-color: var(--ocean);
 }
@@ -372,7 +382,7 @@ section {
     overflow: hidden;
     width: 360px;
     border: none;
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slide-card {
@@ -392,7 +402,7 @@ section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     transform: translateY(100%);
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .transitional:focus .slide-text,
@@ -432,11 +442,12 @@ section {
 }
 
 .foot-social-item {
-    transition: background-color 250ms ease-in-out;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-social-item .icon-link:hover,
-.icon-link:active {
+.foot-social-item .icon-link:focus,
+.foot-social-item .icon-link:active {
     cursor: pointer;
     background-color: var(--green);
 }
