@@ -90,6 +90,8 @@ section {
 .top-menu {
     padding: 24px 0px;
     border-bottom: 1px solid var(--cornf);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .top-menu a {
@@ -127,7 +129,8 @@ section {
 
 .state-change {
     position: relative;
-    color: var(--ocean);
+    /*color: var(--ocean);*/
+    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -438,7 +441,7 @@ section {
 
 .foot-social-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
 }
 
 .foot-social-item {
