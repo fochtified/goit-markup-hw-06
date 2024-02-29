@@ -191,7 +191,7 @@ section {
 
 .order-service {
     background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
-        url("/images/hero-background.jpg");
+        url(/images/hero-background.jpg);
     background-repeat: no-repeat;
     background-size: 1440px auto;
     background-position: center;
