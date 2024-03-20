@@ -16,9 +16,12 @@
         />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
+    <!-- ================= v  BODY  v ================= -->
     <body>
+        <!-- ================= v  HEADER  v ================= -->
         <header class="top-menu">
             <div class="container">
+                <!-- ------------------ v  NAV BAR  v ----------------- -->
                 <nav class="nav-bar">
                     <a class="logo" href="./index.html"
                         >Web<span class="color-break">Studio</span></a
@@ -39,6 +42,7 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- ----------------- v  CONTACT BAR  v ----------------- -->
                 <address class="contact-bar">
                     <ul class="contact-list">
                         <li>
@@ -59,7 +63,13 @@
                 </address>
             </div>
         </header>
+        <!-- ================= ^  HEADER  ^ ================= -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- ================= v  MAIN  v ================= -->
         <main>
+            <!-- ----------------- v  HERO / ORDER  v ----------------- -->
             <section class="order-service">
                 <div class="container">
                     <h1 class="order-slogan">
@@ -70,9 +80,12 @@
                     </button>
                 </div>
             </section>
+            <!-- ----------------- v  PROS  v ----------------- -->
             <section class="pros-general">
                 <div class="container">
-                    <h2 class="section-header">&#91;placeholder&#93;</h2>
+                    <h2 class="section-header visually-hidden">
+                        &#91;placeholder&#93;
+                    </h2>
                     <ul class="pros-list">
                         <li class="pros-list-item">
                             <div class="pros-icon-plane">
@@ -137,6 +150,7 @@
                     </ul>
                 </div>
             </section>
+            <!-- ----------------- v  TEAM CARDS  v ----------------- -->
             <section class="our-team-general">
                 <div class="container">
                     <h2 class="section-header">Our Team</h2>
@@ -412,6 +426,7 @@
                     </ul>
                 </div>
             </section>
+            <!-- ----------------- v  PORTFOLIO CARDS  v ----------------- -->
             <section class="our-portfolio-general">
                 <div class="container">
                     <h2 class="section-header">Our Portfolio</h2>
@@ -548,8 +563,14 @@
                 </div>
             </section>
         </main>
+        <!-- ================= ^  MAIN  ^ ================= -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- ================= v  FOOTER  v ================= -->
         <footer class="foot">
             <div class="container">
+                <!-- ----------------- v  FOOT SLOGAN  v ----------------- -->
                 <div class="foot-slogan">
                     <a class="logo" href="./index.html"
                         >Web<span class="color-break">Studio</span></a
@@ -559,8 +580,9 @@
                         business with digital marketing & growth solutions.
                     </p>
                 </div>
+                <!-- ----------------- v  FOOT SOCIALS  v ----------------- -->
                 <div class="foot-social-section">
-                    <p class="foot-social-title">Social media</p>
+                    <p class="foot-title">Social media</p>
                     <ul class="foot-social-list">
                         <li class="foot-social-item">
                             <a class="icon-link" href=""
@@ -616,7 +638,120 @@
                         </li>
                     </ul>
                 </div>
+                <!-- ----------------- v  SUBSCRIBE  v ----------------- -->
+                <div class="foot-subscribe-section">
+                    <p class="foot-title">Subscribe</p>
+                    <form class="foot-subscribe-form">
+                        <label class="foot-subscribe-label"
+                            ><input
+                                class="foot-subscribe-input"
+                                type="email"
+                                name="subscribe-email"
+                                placeholder="E-mail"
+                        /></label>
+                        <button class="foot-subscribe-button">
+                            Subscribe<svg
+                                width="24"
+                                height="24"
+                                class="foot-subscribe-icon"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-subscribe-1"
+                                ></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
+        <!-- ================= ^  FOOTER  ^ ================= -->
+        <!-- -->
+        <!-- -->
+        <!-- -->
+        <!-- ================= v  MODAL  v ================= -->
+        <div class="modal-backdrop">
+            <!-- ----------------- v  MODAL WINDOW  v ----------------- -->
+            <div class="modal-order-window">
+                <button class="modal-close-window-button">
+                    <svg class="modal-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-cross-1"></use>
+                    </svg>
+                </button>
+                <p class="modal-form-slogan">
+                    Leave your contacts and we will call you back
+                </p>
+                <!-- ----------------- v  FORM  v ----------------- -->
+                <form class="modal-form-main">
+                    <div class="modal-form-comms">
+                        <label class="modal-form-label">Name</label>
+                        <div class="modal-form-input-box">
+                            <input class="modal-form-input" /><svg
+                                class="modal-input-icons"
+                                width="18"
+                                height="24"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-form-person-1"
+                                ></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-form-comms">
+                        <label class="modal-form-label">Phone</label>
+                        <div class="modal-form-input-box">
+                            <input class="modal-form-input" /><svg
+                                class="modal-input-icons"
+                                width="18"
+                                height="24"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-form-phone-1"
+                                ></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-form-comms">
+                        <label class="modal-form-label">Email</label>
+                        <div class="modal-form-input-box">
+                            <input class="modal-form-input" /><svg
+                                class="modal-input-icons"
+                                width="18"
+                                height="24"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-form-envelope-1"
+                                ></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-form-comment">
+                        <label class="modal-form-label">Comment</label
+                        ><textarea
+                            class="modal-form-textarea"
+                            placeholder="Text input"
+                        ></textarea>
+                        <div class="modal-form-pp-check">
+                            <input class="visually-hidden" /><label
+                                class="modal-form-pp-label"
+                                >I accept the terms and conditions of the
+                                <span class="modal-form-pp-checkbox"
+                                    ><svg
+                                        class="modal-checkmark-icon"
+                                        width="10"
+                                        height="8"
+                                    >
+                                        <use></use></svg></span
+                                ><a class="modal-form-pp-link"
+                                    >Privacy Policy</a
+                                ></label
+                            >
+                        </div>
+                    </div>
+                    <button class="modal-send-button">Send</button>
+                </form>
+            </div>
+        </div>
+        <!-- ================= ^  MODAL  ^ ================= -->
     </body>
+    <!-- ================= ^  BODY  ^ ================= -->
 </html>
