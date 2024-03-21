@@ -660,19 +660,19 @@
                     <p class="foot-title">Subscribe</p>
                     <form class="foot-subscribe-form">
                         <label
-                            for="subscribe_email"
+                            for="subscribe-email"
                             class="foot-subscribe-label"
                             ><input
-                                id="subscribe_email"
+                                name="subscribe-email"
+                                id="subscribe-email"
                                 class="foot-subscribe-input"
                                 type="email"
-                                name="subscribe_email"
                                 placeholder="E-mail"
                         /></label>
                         <button
                             class="submit-buttons foot-subscribe-button"
                             type="submit"
-                            name="submit_subscription"
+                            name="submit-subscription"
                         >
                             Subscribe<svg
                                 width="24"
@@ -696,7 +696,7 @@
         <div class="modal-backdrop-container">
             <!-- ----------------- v  MODAL WINDOW  v ----------------- -->
             <div class="modal-order-window">
-                <button class="mf-close-window-button">
+                <button class="mf-close-window-button" type="button">
                     <svg class="mf-close-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-cross-1"></use>
                     </svg>
@@ -710,13 +710,13 @@
                     <!-- -->
                     <!-- ----------------- v  NAME BOX  v ----------------- -->
                     <div class="mf-comms">
-                        <label for="f_user_name" class="mf-label mf-style-font"
+                        <label for="user-name" class="mf-label mf-style-font"
                             >Name</label
                         >
                         <div class="mf-input-box">
                             <input
-                                id="f_user_name"
-                                name="f_user_name"
+                                id="user-name"
+                                name="user-name"
                                 type="text"
                                 class="mf-input mf-field"
                                 required
@@ -733,13 +733,13 @@
                     </div>
                     <!-- ----------------- v  PHONE BOX  v ----------------- -->
                     <div class="mf-comms">
-                        <label for="f_phone" class="mf-label mf-style-font"
+                        <label for="f-phone" class="mf-label mf-style-font"
                             >Phone</label
                         >
                         <div class="mf-input-box">
                             <input
-                                id="f_phone"
-                                name="f_phone"
+                                id="f-phone"
+                                name="f-phone"
                                 type="tel"
                                 class="mf-input mf-field"
                                 required
@@ -756,13 +756,13 @@
                     </div>
                     <!-- ----------------- v  EMAIL BOX  v ----------------- -->
                     <div class="mf-comms">
-                        <label for="f_email" class="mf-label mf-style-font"
+                        <label for="f-email" class="mf-label mf-style-font"
                             >Email</label
                         >
                         <div class="mf-input-box">
                             <input
-                                id="f_email"
-                                name="f_email"
+                                id="f-email"
+                                name="f-email"
                                 type="email"
                                 class="mf-input mf-field"
                                 required
@@ -779,12 +779,11 @@
                     </div>
                     <!-- ----------------- v  COMMENT BOX  v ----------------- -->
                     <div class="mf-comment">
-                        <label for="f_comment" class="mf-label mf-style-font"
+                        <label for="user-comment" class="mf-label mf-style-font"
                             >Comment</label
                         ><textarea
-                            id="f_comment"
-                            name="f_comment"
-                            type="textarea"
+                            id="user-comment"
+                            name="user-comment"
                             class="mf-textarea mf-style-font mf-field"
                             placeholder="Text input"
                         ></textarea>
@@ -792,8 +791,8 @@
                     <!-- ----------------- v  PRIVACY CHECKBOX  v ----------------- -->
                     <div class="mf-pp-check">
                         <input
-                            id="f_pp_checkbox"
-                            name="f_pp_checkbox"
+                            id="user-privacy"
+                            name="user-privacy"
                             type="checkbox"
                             class="mf-check-indicator visually-hidden"
                             value="true"
@@ -801,7 +800,7 @@
                         />
                         <!---->
                         <label
-                            for="f_pp_checkbox"
+                            for="user-privacy"
                             class="mf-pp-label mf-style-font"
                         >
                             <span class="mf-pp-checkbox">
@@ -823,7 +822,7 @@
                     <button
                         class="submit-buttons mf-send-button"
                         type="submit"
-                        name="submit_form"
+                        name="submit-form"
                     >
                         Send
                     </button>
