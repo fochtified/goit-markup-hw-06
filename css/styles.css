@@ -1,3 +1,5 @@
+/* ----------------- v GENERAL v ----------------- */
+
 :root {
     --iris: #4d5ae5;
     --ocean: #404bbf;
@@ -40,16 +42,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-.our-team-general {
-    background-color: var(--cloud);
-}
-
-.foot {
-    background-color: var(--n-blue);
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
 h1,
 h2,
 h3,
@@ -76,6 +68,8 @@ ol {
     list-style-type: none;
 }
 
+/* ----------------- v SECTIONS / CONTAINERS v ----------------- */
+
 section {
     padding: 120px 0px;
 }
@@ -99,6 +93,8 @@ section {
     display: flex;
     align-items: baseline;
 }
+
+/* ----------------- v HEADER / NAV / CONTACTS v ----------------- */
 
 .top-menu {
     padding: 24px 0px;
@@ -173,6 +169,8 @@ section {
     color: var(--ocean);
 }
 
+/* ----------------- v LOGO v ----------------- */
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -208,6 +206,30 @@ section {
     color: var(--cloud);
 }
 
+/* ----------------- v SUBMIT BUTTONS main style and action v ----------------- */
+
+.submit-buttons {
+    color: var(--wh);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--iris);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-buttons:hover,
+.submit-buttons:focus {
+    background-color: var(--ocean);
+    cursor: pointer;
+}
+
+/* ----------------- v HERO (mainly) and associated elements v ----------------- */
+
 .order-service {
     background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
         url(../images/hero-background.jpg);
@@ -221,30 +243,10 @@ section {
 }
 
 .order-button {
-    color: var(--wh);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    background-color: var(--iris);
-    cursor: pointer;
     display: block;
     min-width: 169px;
     height: 56px;
-    margin: 0 auto;
     padding: 16px 32px;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.order-button:hover,
-.order-button:focus,
-.foot-subscribe-button:hover,
-.foot-subscribe-button:focus,
-.modal-send-button:hover,
-.modal-send-button:focus {
-    background-color: var(--ocean);
-    cursor: pointer;
 }
 
 .order-slogan {
@@ -256,6 +258,8 @@ section {
     margin: 0 auto 48px;
     max-width: 496px;
 }
+
+/* ----------------- v PROS (mainly) and associated elements v ----------------- */
 
 .section-header {
     color: var(--n-blue);
@@ -298,6 +302,12 @@ section {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+}
+
+/* ----------------- v TEAM (mainly) and associated elements v ----------------- */
+
+.our-team-general {
+    background-color: var(--cloud);
 }
 
 .our-team-general .subsection-header {
@@ -364,6 +374,8 @@ section {
     fill: var(--cloud);
 }
 
+/* ----------------- v PORTFOLIO (mainly) and associated elements v ----------------- */
+
 .our-portfolio-list {
     display: flex;
     row-gap: 48px;
@@ -414,6 +426,14 @@ section {
 .transitional:focus .slide-text,
 .transitional:hover .slide-text {
     transform: translateY(0%);
+}
+
+/* ----------------- v FOOTER (mainly) and associated elements v ----------------- */
+
+.foot {
+    background-color: var(--n-blue);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .foot .subsection-paragraph {
@@ -490,30 +510,21 @@ section {
 }
 
 .foot-subscribe-button {
-    color: var(--wh);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    background-color: var(--iris);
-    cursor: pointer;
     display: flex;
     justify-content: center;
     min-width: 165px;
     height: 40px;
-    margin: 0 auto;
     padding: 8px 24px;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
 }
 
 .foot-subscribe-icon {
     margin-left: 16px;
 }
 
-/* ----------------- v MODAL FORM v ----------------- */
+/* ----------------- v MODAL FORM (mainly) and associated elements v ----------------- */
 
-.modal-backdrop {
+.modal-backdrop-container {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -524,6 +535,12 @@ section {
         var(--n-blue-mod),
         var(--n-blue-mod)
     );
+}
+
+.modal-backdrop-container.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal-order-window {
@@ -539,7 +556,31 @@ section {
         0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.modal-close-window-button {
+.mf-style-font {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: var(--l-slate);
+}
+
+.mf-style-font::placeholder {
+    color: var(--n-blue-mod);
+}
+
+.mf-field {
+    border: 1px solid var(--n-blue-mod);
+    border-radius: 4px;
+    outline: transparent;
+    width: 100%;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mf-field:focus {
+    border-color: var(--iris);
+}
+
+.mf-close-window-button {
     position: absolute;
     display: flex;
     align-items: center;
@@ -555,33 +596,16 @@ section {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-window-button:hover,
-.modal-close-window-button:focus {
-    background-color: var(--ocean);
-    border: none;
-    cursor: pointer;
-}
-
-.modal-send-button {
-    background-color: var(--iris);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    color: var(--wh);
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    padding: 16px 32px;
+.mf-send-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
 }
 
-.modal-input-icons {
+.mf-input-icons {
     position: absolute;
     left: 16px;
     top: 50%;
@@ -590,20 +614,31 @@ section {
     fill: var(--n-blue);
 }
 
-.modal-close-icon {
+.mf-checkmark-icon {
+}
+
+.mf-field:focus + .mf-input-icons {
+    fill: var(--iris);
+}
+
+.mf-close-window-button:hover,
+.mf-close-window-button:focus {
+    background-color: var(--ocean);
+    border: none;
+    cursor: pointer;
+}
+
+.mf-close-icon {
     fill: var(--n-blue);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-window-button:hover .modal-close-icon,
-.modal-close-window-button:focus .modal-close-icon {
+.mf-close-window-button:hover .mf-close-icon,
+.mf-close-window-button:focus .mf-close-icon {
     fill: var(--wh);
 }
 
-.modal-checkmark-icon {
-}
-
-.modal-form-slogan {
+.mf-slogan {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -613,52 +648,87 @@ section {
     margin-bottom: 16px;
 }
 
-.modal-form-main {
+.mf-main {
 }
 
-.modal-form-comms {
+.mf-comms {
     margin-bottom: 8px;
 }
 
-.modal-form-comment {
+.mf-comment {
+    margin-bottom: 16px;
 }
 
-.modal-form-label {
+.mf-label {
     display: block;
-    font-size: 12px;
-    line-height: 117%;
-    letter-spacing: 0.04em;
-    color: var(--l-slate);
     margin-bottom: 4px;
 }
 
-.modal-form-input-box {
+.mf-input-box {
     display: flex;
     position: relative;
 }
 
-.modal-form-input {
-    border: 1px solid var(--n-blue-mod);
-    border-radius: 4px;
-    width: 100%;
+.mf-input {
     height: 40px;
-    background-color: transparent;
+    padding-left: 38px;
 }
 
-.modal-form-textarea {
+.mf-textarea {
+    height: 120px;
+    resize: none;
+    padding: 8px 16px;
 }
 
-.modal-form-pp-check {
+.mf-pp-check {
+    display: flex;
     margin-bottom: 24px;
 }
 
-.modal-form-pp-label {
+.mf-pp-label {
+    display: block;
+    padding: 0;
 }
 
-.modal-form-pp-checkbox {
+.checkbox {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     width: 16px;
     height: 16px;
+    margin-right: 8px;
 }
 
-.modal-form-pp-link {
+.checkbox:active {
+    background-color: #404bbf;
+}
+
+.mf-pp-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    cursor: pointer;
+}
+
+.mf-check-indicator {
+}
+
+.mf-check-indicator:checked + .mf-pp-label span {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
+
+.mf-pp-link,
+.mf-pp-link:active,
+.mf-pp-link:link,
+.mf-pp-link:visited {
+    color: var(--iris);
 }

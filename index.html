@@ -75,7 +75,7 @@
                     <h1 class="order-slogan">
                         Effective Solutions for Your Business
                     </h1>
-                    <button class="order-button" type="button">
+                    <button class="submit-buttons order-button" type="button">
                         Order Service
                     </button>
                 </div>
@@ -86,6 +86,7 @@
                     <h2 class="section-header visually-hidden">
                         &#91;placeholder&#93;
                     </h2>
+                    <!-- ----------------- v  PROS LIST  v ----------------- -->
                     <ul class="pros-list">
                         <li class="pros-list-item">
                             <div class="pros-icon-plane">
@@ -150,11 +151,13 @@
                     </ul>
                 </div>
             </section>
-            <!-- ----------------- v  TEAM CARDS  v ----------------- -->
+            <!-- ----------------- v  TEAM  v ----------------- -->
             <section class="our-team-general">
                 <div class="container">
                     <h2 class="section-header">Our Team</h2>
+                    <!-- ----------------- v  TEAM CARDS  v ----------------- -->
                     <ul class="our-team-list">
+                        <!-- ----------------- v  TEAM CARD #1  v ----------------- -->
                         <li class="team-card">
                             <img
                                 src="./images/team01.jpg"
@@ -167,6 +170,7 @@
                                 <p class="subsection-paragraph">
                                     Product Designer
                                 </p>
+                                <!-- ----------------- v  TEAM CARD #1 SOCIALS  v ----------------- -->
                                 <ul class="team-social-list">
                                     <li class="team-social-item">
                                         <a class="icon-link" href=""
@@ -223,6 +227,7 @@
                                 </ul>
                             </div>
                         </li>
+                        <!-- ----------------- v  TEAM CARD #2  v ----------------- -->
                         <li class="team-card">
                             <img
                                 src="./images/team02.jpg"
@@ -235,6 +240,7 @@
                                 <p class="subsection-paragraph">
                                     Frontend Developer
                                 </p>
+                                <!-- ----------------- v  TEAM CARD #2 SOCIALS  v ----------------- -->
                                 <ul class="team-social-list">
                                     <li class="team-social-item">
                                         <a class="icon-link" href=""
@@ -291,6 +297,7 @@
                                 </ul>
                             </div>
                         </li>
+                        <!-- ----------------- v  TEAM CARD #3  v ----------------- -->
                         <li class="team-card">
                             <img
                                 src="./images/team03.jpg"
@@ -301,6 +308,7 @@
                             <div class="card-tag">
                                 <h3 class="subsection-header">Camila Garcia</h3>
                                 <p class="subsection-paragraph">Marketing</p>
+                                <!-- ----------------- v  TEAM CARD #3 SOCIALS  v ----------------- -->
                                 <ul class="team-social-list">
                                     <li class="team-social-item">
                                         <a class="icon-link" href=""
@@ -357,6 +365,7 @@
                                 </ul>
                             </div>
                         </li>
+                        <!-- ----------------- v  TEAM CARD #4  v ----------------- -->
                         <li class="team-card">
                             <img
                                 src="./images/team04.jpg"
@@ -367,6 +376,7 @@
                             <div class="card-tag">
                                 <h3 class="subsection-header">Daniel Wilson</h3>
                                 <p class="subsection-paragraph">UI Designer</p>
+                                <!-- ----------------- v  TEAM CARD #4 SOCIALS  v ----------------- -->
                                 <ul class="team-social-list">
                                     <li class="team-social-item">
                                         <a class="icon-link" href=""
@@ -426,11 +436,13 @@
                     </ul>
                 </div>
             </section>
-            <!-- ----------------- v  PORTFOLIO CARDS  v ----------------- -->
+            <!-- ----------------- v  PORTFOLIO v ----------------- -->
             <section class="our-portfolio-general">
                 <div class="container">
                     <h2 class="section-header">Our Portfolio</h2>
+                    <!-- ----------------- v  PORTFOLIO CARDS  v ----------------- -->
                     <ul class="our-portfolio-list">
+                        <!-- ----------------- v  PORTFOLIO CARD #1  v ----------------- -->
                         <li class="portfolio-card transitional">
                             <div class="slide-card">
                                 <img
@@ -451,6 +463,7 @@
                                 <p class="subsection-paragraph">App</p>
                             </div>
                         </li>
+                        <!-- ----------------- v  PORTFOLIO CARD #2  v ----------------- -->
                         <li class="portfolio-card transitional">
                             <div class="slide-card">
                                 <img
@@ -473,6 +486,7 @@
                                 <p class="subsection-paragraph">Marketing</p>
                             </div>
                         </li>
+                        <!-- ----------------- v  PORTFOLIO CARD #3  v ----------------- -->
                         <li class="portfolio-card transitional">
                             <div class="slide-card">
                                 <img
@@ -495,6 +509,7 @@
                                 <p class="subsection-paragraph">App</p>
                             </div>
                         </li>
+                        <!-- ----------------- v  PORTFOLIO CARD #4  v ----------------- -->
                         <li class="portfolio-card transitional">
                             <div class="slide-card">
                                 <img
@@ -515,6 +530,7 @@
                                 <p class="subsection-paragraph">Marketing</p>
                             </div>
                         </li>
+                        <!-- ----------------- v  PORTFOLIO CARD #5  v ----------------- -->
                         <li class="portfolio-card transitional">
                             <div class="slide-card">
                                 <img
@@ -537,6 +553,7 @@
                                 <p class="subsection-paragraph">Design</p>
                             </div>
                         </li>
+                        <!-- ----------------- v  PORTFOLIO CARD #6  v ----------------- -->
                         <li class="portfolio-card transitional">
                             <div class="slide-card">
                                 <img
@@ -638,18 +655,25 @@
                         </li>
                     </ul>
                 </div>
-                <!-- ----------------- v  SUBSCRIBE  v ----------------- -->
+                <!-- ----------------- v  FOOT SUBSCRIBE  v ----------------- -->
                 <div class="foot-subscribe-section">
                     <p class="foot-title">Subscribe</p>
                     <form class="foot-subscribe-form">
-                        <label class="foot-subscribe-label"
+                        <label
+                            for="subscribe_email"
+                            class="foot-subscribe-label"
                             ><input
+                                id="subscribe_email"
                                 class="foot-subscribe-input"
                                 type="email"
-                                name="subscribe-email"
+                                name="subscribe_email"
                                 placeholder="E-mail"
                         /></label>
-                        <button class="foot-subscribe-button">
+                        <button
+                            class="submit-buttons foot-subscribe-button"
+                            type="submit"
+                            name="submit_subscription"
+                        >
                             Subscribe<svg
                                 width="24"
                                 height="24"
@@ -669,24 +693,35 @@
         <!-- -->
         <!-- -->
         <!-- ================= v  MODAL  v ================= -->
-        <div class="modal-backdrop">
+        <div class="modal-backdrop-container">
             <!-- ----------------- v  MODAL WINDOW  v ----------------- -->
             <div class="modal-order-window">
-                <button class="modal-close-window-button">
-                    <svg class="modal-close-icon" width="8" height="8">
+                <button class="mf-close-window-button">
+                    <svg class="mf-close-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-cross-1"></use>
                     </svg>
                 </button>
-                <p class="modal-form-slogan">
+                <p class="mf-slogan">
                     Leave your contacts and we will call you back
                 </p>
                 <!-- ----------------- v  FORM  v ----------------- -->
-                <form class="modal-form-main">
-                    <div class="modal-form-comms">
-                        <label class="modal-form-label">Name</label>
-                        <div class="modal-form-input-box">
-                            <input class="modal-form-input" /><svg
-                                class="modal-input-icons"
+                <form class="mf-main">
+                    <!-- ----------------- v  INPUT BOXES  v ----------------- -->
+                    <!-- -->
+                    <!-- ----------------- v  NAME BOX  v ----------------- -->
+                    <div class="mf-comms">
+                        <label for="f_user_name" class="mf-label mf-style-font"
+                            >Name</label
+                        >
+                        <div class="mf-input-box">
+                            <input
+                                id="f_user_name"
+                                name="f_user_name"
+                                type="text"
+                                class="mf-input mf-field"
+                                required
+                            /><svg
+                                class="mf-input-icons"
                                 width="18"
                                 height="24"
                             >
@@ -696,11 +731,20 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="modal-form-comms">
-                        <label class="modal-form-label">Phone</label>
-                        <div class="modal-form-input-box">
-                            <input class="modal-form-input" /><svg
-                                class="modal-input-icons"
+                    <!-- ----------------- v  PHONE BOX  v ----------------- -->
+                    <div class="mf-comms">
+                        <label for="f_phone" class="mf-label mf-style-font"
+                            >Phone</label
+                        >
+                        <div class="mf-input-box">
+                            <input
+                                id="f_phone"
+                                name="f_phone"
+                                type="tel"
+                                class="mf-input mf-field"
+                                required
+                            /><svg
+                                class="mf-input-icons"
                                 width="18"
                                 height="24"
                             >
@@ -710,11 +754,20 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="modal-form-comms">
-                        <label class="modal-form-label">Email</label>
-                        <div class="modal-form-input-box">
-                            <input class="modal-form-input" /><svg
-                                class="modal-input-icons"
+                    <!-- ----------------- v  EMAIL BOX  v ----------------- -->
+                    <div class="mf-comms">
+                        <label for="f_email" class="mf-label mf-style-font"
+                            >Email</label
+                        >
+                        <div class="mf-input-box">
+                            <input
+                                id="f_email"
+                                name="f_email"
+                                type="email"
+                                class="mf-input mf-field"
+                                required
+                            /><svg
+                                class="mf-input-icons"
                                 width="18"
                                 height="24"
                             >
@@ -724,30 +777,56 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="modal-form-comment">
-                        <label class="modal-form-label">Comment</label
+                    <!-- ----------------- v  COMMENT BOX  v ----------------- -->
+                    <div class="mf-comment">
+                        <label for="f_comment" class="mf-label mf-style-font"
+                            >Comment</label
                         ><textarea
-                            class="modal-form-textarea"
+                            id="f_comment"
+                            name="f_comment"
+                            type="textarea"
+                            class="mf-textarea mf-style-font mf-field"
                             placeholder="Text input"
                         ></textarea>
-                        <div class="modal-form-pp-check">
-                            <input class="visually-hidden" /><label
-                                class="modal-form-pp-label"
-                                >I accept the terms and conditions of the
-                                <span class="modal-form-pp-checkbox"
-                                    ><svg
-                                        class="modal-checkmark-icon"
-                                        width="10"
-                                        height="8"
-                                    >
-                                        <use></use></svg></span
-                                ><a class="modal-form-pp-link"
-                                    >Privacy Policy</a
-                                ></label
-                            >
-                        </div>
                     </div>
-                    <button class="modal-send-button">Send</button>
+                    <!-- ----------------- v  PRIVACY CHECKBOX  v ----------------- -->
+                    <div class="mf-pp-check">
+                        <input
+                            id="f_pp_checkbox"
+                            name="f_pp_checkbox"
+                            type="checkbox"
+                            class="mf-check-indicator visually-hidden"
+                            value="true"
+                            required
+                        />
+                        <!---->
+                        <label
+                            for="f_pp_checkbox"
+                            class="mf-pp-label mf-style-font"
+                        >
+                            <span class="mf-pp-checkbox">
+                                <svg
+                                    class="mf-checkmark-icon"
+                                    width="10"
+                                    height="8"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-checkmark-1"
+                                    ></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the
+                            <a href="" class="mf-pp-link">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <!-- ----------------- v  SEND BUTTON  v ----------------- -->
+                    <button
+                        class="submit-buttons mf-send-button"
+                        type="submit"
+                        name="submit_form"
+                    >
+                        Send
+                    </button>
                 </form>
             </div>
         </div>
