@@ -595,7 +595,7 @@ section {
     width: 24px;
     height: 24px;
     padding: 0;
-    ursor: pointer;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -655,13 +655,12 @@ section {
 .mf-main {
 }
 
-.mf-comms {
+.mf-main .mf-comms {
     margin-bottom: 8px;
 }
 
-.mf-comment {
+.mf-main .mf-comment {
     margin-bottom: 16px;
-    color: var(--n-blue-mod);
 }
 
 .mf-label {
@@ -679,10 +678,11 @@ section {
     padding-left: 38px;
 }
 
-.mf-textarea {
+.mf-comment .mf-textarea {
     height: 120px;
     resize: none;
     padding: 8px 16px;
+    color: var(--n-blue-mod);
 }
 
 .mf-pp-check {
