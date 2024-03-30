@@ -231,6 +231,14 @@ section {
 
 /* ----------------- v HERO (mainly) and associated elements v ----------------- */
 
+.order-service .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
 .order-service {
     background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
         url(../images/hero-background.jpg);
@@ -256,7 +264,6 @@ section {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    margin: 0 auto 48px;
     max-width: 496px;
 }
 
@@ -317,6 +324,7 @@ section {
 
 .subsection-paragraph {
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .our-team-general .subsection-paragraph {
@@ -526,6 +534,7 @@ section {
 
 /* ----------------- v MODAL FORM (mainly) and associated elements v ----------------- */
 
+/* 
 .modal-backdrop-container {
     width: 100%;
     height: 100%;
@@ -737,21 +746,138 @@ section {
 .mf-pp-link:visited {
     color: var(--iris);
 }
+*/
 
 /* ----------------- v MOBILE RULES v ----------------- */
 
 @media (max-width: 767px) {
-    /* */
-    /* */
-    /* */
+    /* --- section/container --- */
+    .container {
+        max-width: 320px;
+        padding: 0 16px;
+    }
+
+    section {
+        padding: 96px 0px;
+    }
+
+    /* --- header/menu/navs --- */
+    /* --- logo --- */
+    /* --- buttons style/action --- */
+    /* --- hero --- */
+
+    .order-service .container {
+        gap: 72px;
+    }
+
+    .order-service {
+        padding: 72px 0;
+    }
+
+    .order-slogan {
+        font-size: 36px;
+        line-height: 1.11;
+        max-width: 216px;
+    }
+
+    /* --- pros --- */
+
+    .pros-general .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-header {
+    }
+
+    .pros-list {
+        gap: 72px;
+        flex-direction: column;
+    }
+
+    .pros-icon-plane {
+        display: none;
+    }
+
+    .pros-list-item {
+        width: 288px;
+    }
+
+    .subsection-header {
+        color: var(--n-blue);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        text-align: center;
+    }
+
+    .subsection-paragraph {
+        font-weight: 500;
+    }
 }
 
 /* ----------------- v TABLET RULES v ----------------- */
 
 @media (min-width: 768px) and (max-width: 1158px) {
-    /* */
-    /* */
-    /* */
+    /* --- section/container --- */
+    .container {
+        max-width: 768px;
+        padding: 0 16px;
+    }
+
+    section {
+        padding: 96px 0px;
+    }
+
+    /* --- header/menu/navs --- */
+    /* --- logo --- */
+    /* --- buttons style/action --- */
+    /* --- hero --- */
+
+    .order-service .container {
+        gap: 36px;
+    }
+
+    .order-service {
+        padding: 112px 0;
+    }
+
+    /* --- pros --- */
+    .pros-general .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-header {
+    }
+
+    .pros-list {
+        gap: 72px 24px;
+        flex-wrap: wrap;
+    }
+
+    .pros-icon-plane {
+        display: none;
+    }
+
+    .pros-list-item {
+        width: 356px;
+    }
+
+    .subsection-header {
+        color: var(--n-blue);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+    }
+
+    .subsection-paragraph {
+        font-weight: 500;
+    }
 }
 
 /* ----------------- v DPI RULES v ----------------- */
