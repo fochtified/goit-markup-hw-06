@@ -790,7 +790,19 @@ section {
     /* ------------------- header/menu/navs ----- */
     /**/
 
+    .nav-list,
+    .contact-bar {
+        display: none;
+    }
+
     /* ------------------- logo ----- */
+
+    .top-menu .logo {
+        display: block;
+        margin-right: 0px;
+        padding: 16px 0;
+    }
+
     .foot .logo {
         display: block;
         text-align: center;
