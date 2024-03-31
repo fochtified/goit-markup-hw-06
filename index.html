@@ -27,7 +27,7 @@
                     <a class="logo" href="./index.html"
                         >Web<span class="color-break">Studio</span></a
                     >
-                    <!-- ------------------ v  MOBILE MENU  v ----------------- -->
+                    <!-- ------------------ v  [MOBILE] MENU TOGGLE  v ----------------- -->
                     <a class="mobile-menu-toggle" href=""
                         ><svg class="mobile-menu-icon" width="24" height="24">
                             <use
@@ -35,6 +35,7 @@
                             ></use>
                         </svg>
                     </a>
+                    <!-- ------------------ v  DEFAULT NAV BAR  v ----------------- -->
                     <ul class="nav-list">
                         <li>
                             <a
@@ -51,7 +52,7 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- ----------------- v  CONTACT BAR  v ----------------- -->
+                <!-- ----------------- v  DEFAULT CONTACT BAR  v ----------------- -->
                 <address class="contact-bar">
                     <ul class="contact-list">
                         <li>
@@ -70,6 +71,90 @@
                         </li>
                     </ul>
                 </address>
+            </div>
+            <!-- ------------------ v  [MOBILE] MENU MODAL v ----------------- -->
+            <div class="mobile-menu-modal">
+                <button class="m-close-window-button" type="button">
+                    <svg class="m-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-cross-1"></use>
+                    </svg>
+                </button>
+                <!-- ------------------ v  [MOBILE] NAV LIST  v ----------------- -->
+                <nav class="mmm-nav-sect">
+                    <ul class="mmm-nav-list">
+                        <li>
+                            <a
+                                class="mmm-nav-list-item mmm-state-change"
+                                href="./index.html"
+                                >Studio</a
+                            >
+                        </li>
+                        <li>
+                            <a class="mmm-nav-list-item" href="">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="mmm-nav-list-item" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- ------------------ v  [MOBILE] CONTACT LIST  v ----------------- -->
+                <address class="mmm-contact-sect">
+                    <ul class="mmm-contact-list">
+                        <li>
+                            <a
+                                class="mmm-contact-list-item"
+                                href="mailto:info@devstudio.com"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="mmm-contact-list-item"
+                                href="tel:+110001111111"
+                                >+11 (000) 111-11-11</a
+                            >
+                        </li>
+                    </ul>
+                </address>
+                <!-- ------------------ v  [MOBILE] SOCIAL LIST  v ----------------- -->
+                <ul class="team-social-list">
+                    <li class="team-social-item">
+                        <a class="icon-link" href=""
+                            ><svg class="social-icons" height="16" width="16">
+                                <use
+                                    href="./images/icons.svg#icon-instagram-2"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-item">
+                        <a class="icon-link" href=""
+                            ><svg class="social-icons" height="16" width="16">
+                                <use
+                                    href="./images/icons.svg#icon-twitter-1"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-item">
+                        <a class="icon-link" href=""
+                            ><svg class="social-icons" height="16" width="16">
+                                <use
+                                    href="./images/icons.svg#icon-facebook-1"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-item">
+                        <a class="icon-link" href=""
+                            ><svg class="social-icons" height="16" width="16">
+                                <use
+                                    href="./images/icons.svg#icon-linkedin-1"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </header>
         <!-- ================= ^  HEADER  ^ ================= -->
@@ -701,13 +786,13 @@
         <!-- -->
         <!-- -->
         <!-- -->
-        <!-- ================= v  MODAL  v ================= -->
-        <div class="modal-backdrop-container">
-            <!-- ^ delete 'modal-off' to show modal window ^ -->
+        <!-- ================= v  ORDER MODAL  v ================= -->
+        <div class="modal-backdrop-container modal-off">
+            <!-- ^ add/delete class 'modal-off' to hide/show modal window ^ -->
             <!-- ----------------- v  MODAL WINDOW  v ----------------- -->
             <div class="modal-order-window">
-                <button class="mf-close-window-button" type="button">
-                    <svg class="mf-close-icon" width="8" height="8">
+                <button class="m-close-window-button" type="button">
+                    <svg class="m-close-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-cross-1"></use>
                     </svg>
                 </button>
@@ -841,7 +926,7 @@
                 </form>
             </div>
         </div>
-        <!-- ================= ^  MODAL  ^ ================= -->
+        <!-- ================= ^  ORDER MODAL  ^ ================= -->
     </body>
     <!-- ================= ^  BODY  ^ ================= -->
 </html>
