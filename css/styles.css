@@ -1196,7 +1196,7 @@ section {
     }
 }
 
-/* ----------------- v GFX DPI RULES v ----------------- */
+/* ----------------- v GFX/DPI SENSITIVE RULES v ----------------- */
 
 /* 
 ░░      ░░░        ░░  ░░░░  ░░░░░░░░       ░░░       ░░░        ░
@@ -1208,39 +1208,48 @@ section {
 
 /* ------------------- default ----- */
 @media (min-width: 1158px) and (max-resolution: 192dpi) {
-    /* */
-    /* */
-    /* */
+    .order-service {
+        background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+            url(../images/hero-background.jpg);
+    }
 }
 
+/* ------------------- default retina ----- */
 @media (min-width: 1158px) and (min-resolution: 192dpi) {
-    /* */
-    /* */
-    /* */
+    .order-service {
+        background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+            url(../images/hero-background-d2x.jpg);
+    }
 }
 
 /* ------------------- tablet ----- */
 @media (min-width: 768px) and (max-width: 1158px) and (max-resolution: 192dpi) {
-    /* */
-    /* */
-    /* */
+    .order-service {
+        background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+            url(../images/hero-background-t1x.jpg);
+    }
 }
 
+/* ------------------- tablet retina ----- */
 @media (min-width: 768px) and (max-width: 1158px) and (min-resolution: 192dpi) {
-    /* */
-    /* */
-    /* */
+    .order-service {
+        background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+            url(../images/hero-background-t2x.jpg);
+    }
 }
 
 /* ------------------- mobile ----- */
 @media (max-width: 767px) and (max-resolution: 192dpi) {
-    /* */
-    /* */
-    /* */
+    .order-service {
+        background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+            url(../images/hero-background-m1x.jpg);
+    }
 }
 
+/* ------------------- mobile retina ----- */
 @media (max-width: 767px) and (min-resolution: 192dpi) {
-    /* */
-    /* */
-    /* */
+    .order-service {
+        background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
+            url(../images/hero-background-m2x.jpg);
+    }
 }
