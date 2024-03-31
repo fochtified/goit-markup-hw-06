@@ -96,7 +96,6 @@ section {
 /* ----------------- v HEADER / NAV / CONTACTS v ----------------- */
 
 .top-menu {
-    padding: 24px 0px;
     border-bottom: 1px solid var(--cornf);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -124,6 +123,7 @@ section {
 .nav-list-item,
 .nav-list-item:link,
 .nav-list-item:visited {
+    display: block;
     font-weight: 500;
     color: var(--n-blue);
     padding: 24px 0px;
@@ -755,10 +755,29 @@ section {
     color: var(--iris);
 }
 
+/* ----------------- v SCREEN RULES v ----------------- */
+
+/*
+░░      ░░░░      ░░░       ░░░        ░░        ░░   ░░░  ░░░░░░░░       ░░░  ░░░░  ░░  ░░░░░░░░        ░░░      ░░
+▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒    ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒
+▓▓      ▓▓▓  ▓▓▓▓▓▓▓▓       ▓▓▓      ▓▓▓▓      ▓▓▓▓  ▓  ▓  ▓▓▓▓▓▓▓▓       ▓▓▓  ▓▓▓▓  ▓▓  ▓▓▓▓▓▓▓▓      ▓▓▓▓▓      ▓▓
+███████  ██  ████  ██  ███  ███  ████████  ████████  ██    ████████  ███  ███  ████  ██  ████████  ██████████████  █
+██      ████      ███  ████  ██        ██        ██  ███   ████████  ████  ███      ███        ██        ███      ██
+/*
+
 /* ----------------- v MOBILE RULES v ----------------- */
 
+/*
+░  ░░░░  ░░░      ░░░       ░░░        ░░  ░░░░░░░░        ░
+▒   ▒▒   ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒
+▓        ▓▓  ▓▓▓▓  ▓▓       ▓▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓▓▓▓▓      ▓▓▓
+█  █  █  ██  ████  ██  ████  █████  █████  ████████  ███████
+█  ████  ███      ███       ███        ██        ██        █
+*/
+
 @media (max-width: 767px) {
-    /* --- section/container --- */
+    /**/
+    /* ------------------- section/container ----- */
     .container {
         max-width: 320px;
         padding: 0 16px;
@@ -768,15 +787,16 @@ section {
         padding: 96px 0px;
     }
 
-    /* --- header/menu/navs --- */
-    /* --- logo --- */
+    /* ------------------- header/menu/navs ----- */
+    /**/
+
+    /* ------------------- logo ----- */
     .foot .logo {
         display: block;
         text-align: center;
     }
-    /* --- buttons style/action --- */
-    /* --- hero --- */
 
+    /* ------------------- hero ----- */
     .order-service .container {
         gap: 72px;
     }
@@ -791,8 +811,7 @@ section {
         max-width: 216px;
     }
 
-    /* --- pros --- */
-
+    /* ------------------- pros ----- */
     .pros-general .container {
         display: flex;
         flex-direction: column;
@@ -828,15 +847,15 @@ section {
         font-weight: 500;
     }
 
-    /* --- team --- */
+    /* ------------------- team ----- */
     .our-team-list {
         gap: 72px;
     }
 
-    /* --- portfolio --- */
+    /* ------------------- portfolio ----- */
+    /**/
 
-    /* --- footer --- */
-
+    /* ------------------- footer ----- */
     .foot {
         padding: 96px 0;
     }
@@ -877,8 +896,17 @@ section {
 
 /* ----------------- v TABLET RULES v ----------------- */
 
+/*
+░        ░░░      ░░░       ░░░  ░░░░░░░░        ░░        ░
+▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒▒▒  ▒▒▒▒
+▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓▓▓▓▓      ▓▓▓▓▓▓▓  ▓▓▓▓
+████  █████        ██  ████  ██  ████████  ███████████  ████
+████  █████  ████  ██       ███        ██        █████  ████
+*/
+
 @media (min-width: 768px) and (max-width: 1158px) {
-    /* --- section/container --- */
+    /**/
+    /* ------------------- section/container ----- */
     .container {
         max-width: 768px;
         padding: 0 16px;
@@ -888,11 +916,33 @@ section {
         padding: 96px 0px;
     }
 
-    /* --- header/menu/navs --- */
-    /* --- logo --- */
-    /* --- buttons style/action --- */
-    /* --- hero --- */
+    /* ------------------- header/menu/navs ----- */
+    .top-menu {
+    }
 
+    .contact-bar {
+        padding: 16px 0 16px;
+    }
+    .contact-list {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-list-item {
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        line-height: 1.17;
+    }
+
+    /* ------------------- logo ----- */
+    .top-menu .logo {
+        margin-right: 120px;
+    }
+    .foot .logo {
+        display: block;
+    }
+
+    /* ------------------- hero ----- */
     .order-service .container {
         gap: 36px;
     }
@@ -901,7 +951,7 @@ section {
         padding: 112px 0;
     }
 
-    /* --- pros --- */
+    /* ------------------- pros ----- */
     .pros-general .container {
         display: flex;
         flex-direction: column;
@@ -936,12 +986,12 @@ section {
         font-weight: 500;
     }
 
-    /* --- team --- */
+    /* ------------------- team ----- */
     .our-team-list {
         gap: 72px 24px;
     }
 
-    /* --- portfolio --- */
+    /* ------------------- portfolio ----- */
     .our-portfolio-list {
         row-gap: 72px;
     }
@@ -951,8 +1001,7 @@ section {
         width: 356px;
     }
 
-    /* --- footer --- */
-
+    /* ------------------- footer ----- */
     .foot {
         padding: 96px 0;
     }
@@ -991,9 +1040,17 @@ section {
     }
 }
 
-/* ----------------- v DPI RULES v ----------------- */
+/* ----------------- v GFX DPI RULES v ----------------- */
 
-/* --- default --- */
+/* 
+░░      ░░░        ░░  ░░░░  ░░░░░░░░       ░░░       ░░░        ░
+▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒
+▓  ▓▓▓   ▓▓      ▓▓▓▓▓▓    ▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓▓▓▓  ▓▓▓▓
+█  ████  ██  █████████  ██  █████████  ████  ██  ███████████  ████
+██      ███  ████████  ████  ████████       ███  ████████        █
+*/
+
+/* ------------------- default ----- */
 @media (min-width: 1158px) and (max-resolution: 192dpi) {
     /* */
     /* */
@@ -1006,7 +1063,7 @@ section {
     /* */
 }
 
-/* --- tablet --- */
+/* ------------------- tablet ----- */
 @media (min-width: 768px) and (max-width: 1158px) and (max-resolution: 192dpi) {
     /* */
     /* */
@@ -1019,7 +1076,7 @@ section {
     /* */
 }
 
-/* --- mobile --- */
+/* ------------------- mobile ----- */
 @media (max-width: 767px) and (max-resolution: 192dpi) {
     /* */
     /* */
