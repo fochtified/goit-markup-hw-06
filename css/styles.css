@@ -88,9 +88,6 @@ section {
 }
 
 .foot .container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
     display: flex;
     align-items: baseline;
 }
@@ -449,8 +446,7 @@ section {
 
 .foot {
     background-color: var(--n-blue);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0px;
 }
 
 .foot .subsection-paragraph {
@@ -771,6 +767,10 @@ section {
 
     /* --- header/menu/navs --- */
     /* --- logo --- */
+    .foot .logo {
+        display: block;
+        text-align: center;
+    }
     /* --- buttons style/action --- */
     /* --- hero --- */
 
@@ -821,13 +821,52 @@ section {
         text-align: center;
     }
 
-    .subsection-paragraph {
+    .pros-general .subsection-paragraph {
         font-weight: 500;
     }
 
     /* --- team --- */
     .our-team-list {
         gap: 72px;
+    }
+
+    /* --- portfolio --- */
+
+    /* --- footer --- */
+
+    .foot {
+        padding: 96px 0;
+    }
+
+    .foot .container {
+        gap: 72px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot-slogan,
+    .foot-subscribe-section {
+        margin: auto;
+    }
+
+    .foot-social-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-subscribe-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-subscribe-form {
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -888,7 +927,7 @@ section {
         line-height: 1.11;
     }
 
-    .subsection-paragraph {
+    .pros-general .subsection-paragraph {
         font-weight: 500;
     }
 
