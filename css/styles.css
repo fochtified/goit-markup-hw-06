@@ -335,6 +335,8 @@ section {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-card {
@@ -390,6 +392,12 @@ section {
     row-gap: 48px;
     column-gap: 24px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-card {
+    width: 360px;
 }
 
 .portfolio-card .card-tag {
@@ -805,7 +813,7 @@ section {
         width: 288px;
     }
 
-    .subsection-header {
+    .pros-list-item .subsection-header {
         color: var(--n-blue);
         font-size: 36px;
         font-weight: 700;
@@ -815,6 +823,11 @@ section {
 
     .subsection-paragraph {
         font-weight: 500;
+    }
+
+    /* --- team --- */
+    .our-team-list {
+        gap: 72px;
     }
 }
 
@@ -868,7 +881,7 @@ section {
         width: 356px;
     }
 
-    .subsection-header {
+    .pros-list-item .subsection-header {
         color: var(--n-blue);
         font-size: 36px;
         font-weight: 700;
@@ -877,6 +890,21 @@ section {
 
     .subsection-paragraph {
         font-weight: 500;
+    }
+
+    /* --- team --- */
+    .our-team-list {
+        gap: 72px 24px;
+    }
+
+    /* --- portfolio --- */
+    .our-portfolio-list {
+        row-gap: 72px;
+    }
+
+    .portfolio-card,
+    .our-portfolio-list .transitional {
+        width: 356px;
     }
 }
 
