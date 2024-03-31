@@ -905,7 +905,7 @@ section {
         background-color: var(--wh);
     }
 
-    .team-social-list {
+    .mobile-menu-modal .team-social-list {
         gap: 40px;
     }
 
@@ -976,10 +976,23 @@ section {
     /* ------------------- team ----- */
     .our-team-list {
         gap: 72px;
+        flex-direction: column;
+    }
+
+    .team-card {
+        width: 264px;
     }
 
     /* ------------------- portfolio ----- */
-    /**/
+
+    .our-portfolio-list {
+        flex-direction: column;
+    }
+
+    .portfolio-card,
+    .our-portfolio-list .transitional {
+        width: 288px;
+    }
 
     /* ------------------- footer ----- */
     .foot {
