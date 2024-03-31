@@ -12,6 +12,7 @@
     --n-blue-mod: rgba(46, 47, 66, 0.4);
     --grey: rgba(46, 47, 66, 0.7);
     --wh: #fff;
+    --bl: #000000;
     --dairy: #fcfcfc;
     --butt-border: rgba(0, 0, 0, 0.1);
     --subs-border: rgba(255, 255, 255, 0.3);
@@ -94,6 +95,17 @@ section {
 }
 
 /* ----------------- v HEADER / NAV / CONTACTS v ----------------- */
+
+.mobile-menu-toggle {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    display: none;
+}
+
+.mobile-menu-icon {
+    fill: var(--bl);
+}
 
 .top-menu {
     border-bottom: 1px solid var(--cornf);
@@ -781,6 +793,7 @@ section {
     .container {
         max-width: 320px;
         padding: 0 16px;
+        position: relative;
     }
 
     section {
@@ -793,6 +806,10 @@ section {
     .nav-list,
     .contact-bar {
         display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
     }
 
     /* ------------------- logo ----- */
